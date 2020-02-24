@@ -21,7 +21,9 @@ function docletModel(doclet) {
         doclet: doclet,
         example: util.example
       }
-    );
+	);
+	viewModel.doclet.params
+	//console.log(JSON.stringify(viewModel,null,2))
     util.view('doclet.rst', viewModel, cb);
   };
 }
