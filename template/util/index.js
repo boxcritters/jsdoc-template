@@ -24,7 +24,7 @@ module.exports = _.extend({
  */
 function view(name, model, cb) {
   //var basePath = path.join(path.dirname(require.main.filename), '../views');
-  var basePath = path.join(path.dirname(process.cwd(), '../views');
+  var basePath = path.join(path.dirname(process.cwd(), '../views'));
   var render = function(err, files) {
     if (err) {
       cb(err);
