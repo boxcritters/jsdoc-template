@@ -23,7 +23,7 @@ module.exports = _.extend({
  * @param  {viewCallback} cb callback
  */
 function view(name, model, cb) {
-  var basePath = path.join(path.dirname(__filename), '../views');
+  var basePath = path.join(path.dirname(require.main.filename), '../views');
   var render = function(err, files) {
     if (err) {
       cb(err);
